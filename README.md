@@ -74,6 +74,8 @@ Using Enum
 <img src="img_14.png">
 </div>
 
+## DynamicTest
+![img_15.png](img_15.png)
 
 
 
