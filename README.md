@@ -79,4 +79,40 @@ Using Enum
 
 
 
+## Software Testing Principle
+<div align="center">
+<img src="img_16.png">
+</div>
+
+**Unit Test**:Unit testing is a software testing method in which individual units of source code (methods or
+classes) are tested to determine whether they are fit for use. Unit testing increases developer
+confidence in changing the code because from the beginning, it serves as a safety net.\
+**Integration Test**: next step is hooking up the class with other methods and services. Examining the interaction
+among components, possibly running in their target environment, is the job of integration
+testing.\
+**System software testing**: System testing of software is testing conducted on a complete, integrated system to evaluate
+the system’s compliance with its specified requirements. \
+**Acceptance software testing**: It is important that an application performs well, but the application must also meet the
+customer's needs. Acceptance tests are our final level of testing.
+
+**Black-box testing:** A black-box test has no knowledge of the internal state or behavior of the system. The test
+relies solely on the external system interface to verify its correctness.
+more sophisticated approach is to use a tool for this task, such as HTTPUnit,
+HTMLUnit, or Selenium. 
+
+**White-box testing:** In
+this type of testing, we use a detailed knowledge of the implementation to create tests and
+drive the testing process. In addition to understanding component implementation, we need to
+know how this testing process interacts with other components.
+
+![img_17.png](img_17.png)
+
+### Reduce dependencies
+Using dependency injection reduce the fault and coupling.
+![img_18.png](img_18.png)
+
+![img_19.png](img_19.png)
+
+### Law of Demeter (Principle of Least Knowledge) 
+
 
