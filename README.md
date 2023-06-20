@@ -128,3 +128,14 @@ The pattern of testing with a stub is: initialize stub > execute test > verify a
 The pattern of testing with a mock object is: initialize mock > set expectations > execute test > verify assertions. 
 
 
+
+
+# Code Part
+**@DataJpaTest** : test the persistence layer components that will autoconfigure an in-memory embedded database for testing purposes.
+
+Does not load beans into ApplicationContext.
+ 
+
+`import static org.assertj.core.api.Assertions.assertThat;`
+
+![img_21.png](img_21.png)
