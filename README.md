@@ -116,3 +116,15 @@ Using dependency injection reduce the fault and coupling.
 ### Law of Demeter (Principle of Least Knowledge) 
 
 
+
+## Coarse-grained testing with stubs 
+suppose that you are working with other developers on a project. What if you
+want to test your part of the application, but the other part is not ready? One solution is to
+simulate the missing part by replacing it with a fake that behaves in a similar way.
+There are two strategies for providing these fake objects: stubbing and using mock
+objects.
+
+The pattern of testing with a stub is: initialize stub > execute test > verify assertions.\
+The pattern of testing with a mock object is: initialize mock > set expectations > execute test > verify assertions. 
+
+

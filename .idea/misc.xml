@@ -9,6 +9,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/junit-core/pom.xml" />
+        <option value="$PROJECT_DIR$/medron/pom.xml" />
       </list>
     </option>
   </component>
