@@ -74,9 +74,15 @@ public class EmployeeManagerTest {
 
     @Test
     void getAll() {
+        Employee employee = new Employee(1,"Mehmet","Hun",5000,"CCC");
         List<Employee> employeeList = new ArrayList<>();
-        employeeList.add(new Employee(1,"Medet","Ugurlu",1000,"ABC"));
-        employeeList.add(new Employee(2,"Melike","Ugurlu",200,"CBA"));
+        employeeList.add(employee);
+        when(employeeRepository.findAll()).thenReturn(employeeList);
+        List<EmployeeDto> employeeDtoList = service.getAll();
+        System.out.println(employeeDtoList.get(0));
+
+        assertThat(employeeDtoList.size()).isEqualTo(1);
+
 
     }
 }
