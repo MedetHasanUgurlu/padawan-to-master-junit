@@ -29,7 +29,6 @@ class EmployeeRepositoryTest {
     @Test
     void saveTest() {
         repository.save(e);
-
         Assertions.assertThat(e).isNotNull();
         Assertions.assertThat(e.getId()).isGreaterThan(0);
         assertThat(e.getName()).isNotEmpty();
@@ -39,6 +38,7 @@ class EmployeeRepositoryTest {
     void getAll() {
         repository.save(e);
         List<Employee> employeeList = repository.findAll();
+        employeeList.forEach(System.out::println);
         assertThat(employeeList.size()).isGreaterThan(0);
     }
     @Test

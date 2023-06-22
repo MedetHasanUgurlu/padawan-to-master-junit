@@ -12,8 +12,11 @@ import java.util.List;
 public class EmployeeManager implements EmployeeService{
     private final EmployeeRepository repository;
     @Override
-    public void add(EmployeeDto dto) {
-        repository.save(customMapToEntity(dto));
+    public Employee add(EmployeeDto dto) {
+        if(repository.existsByNameIgnoreCase(dto.name())){
+            throw new RuntimeException("Name already exist");
+        }
+        return repository.save(customMapToEntity(dto));
     }
 
     @Override
@@ -31,7 +34,7 @@ public class EmployeeManager implements EmployeeService{
         return repository.findAll().stream().map(this::customMapToDto).toList();
     }
 
-    private Employee customMapToEntity(EmployeeDto dto){
+    public Employee customMapToEntity(EmployeeDto dto){
         Employee e = new Employee();
         e.setId(dto.id());
         e.setName(dto.name());
@@ -40,7 +43,7 @@ public class EmployeeManager implements EmployeeService{
         e.setDepartment(dto.department());
         return e;
     }
-    private EmployeeDto customMapToDto(Employee e){
+    public EmployeeDto customMapToDto(Employee e){
      EmployeeDto employeeDto = new EmployeeDto(e.getId(),e.getName(),e.getSurName(),e.getSalary(),e.getDepartment());
      return  employeeDto;
     }

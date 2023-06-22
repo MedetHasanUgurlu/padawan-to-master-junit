@@ -18,4 +18,15 @@ public class Employee {
     private String surName;
     private int salary;
     private String department;
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", surName='" + surName + '\'' +
+                ", salary=" + salary +
+                ", department='" + department + '\'' +
+                '}';
+    }
 }

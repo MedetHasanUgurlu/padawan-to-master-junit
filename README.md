@@ -129,6 +129,19 @@ The pattern of testing with a mock object is: initialize mock > set expectations
 
 
 
+BDD= Behaviour Driven Development
+
+integration test = testing coplmete flow
+
+@DataJpaTest : test the persistence layer components that will autoconfigure in-memory embedded database for testing purposes.
+
+Does not load beans into ApplicationContext.
+@DataJpaTest are transactional and roll back at the end of each test.
+
+import static org.assertj.core.api.Assertions.assertThat;
+Assertions.assertThat()  ========= assertThat()
+Using @BeforeEach in repository test is helps to initate with object in db.
+
 
 # Code Part
 **@DataJpaTest** : test the persistence layer components that will autoconfigure an in-memory embedded database for testing purposes.
@@ -139,3 +152,5 @@ Does not load beans into ApplicationContext.
 `import static org.assertj.core.api.Assertions.assertThat;`
 
 ![img_21.png](img_21.png)
+
+

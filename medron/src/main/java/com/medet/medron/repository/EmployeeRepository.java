@@ -6,5 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee,Integer> {
+    boolean existsByNameIgnoreCase(String name);
+    Employee findByName(String name);
 
 }
