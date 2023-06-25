@@ -9,8 +9,6 @@ n
 >junit-core/src/test/java/com/medet/junitcore/DynamicTestA.java,d\3\d37b8ca4c1f03e28f3c5453b27427a5cc2016587
 y
 Ijunit-core/src/main/java/com/medet/junitcore/PredicatePositiveNumber.java,7\0\700b689917e3f79446b33eb3fe5874a8d8aa1a5c
-q
-Amedron/src/test/java/com/medet/medron/MedronApplicationTests.java,7\b\7b5f3d070b1d945a517010b21736ccf83ebf24ee
 
 Q.idea/sonarlint/securityhotspotstore/a/c/ac3d69294c19276da5912b07548a32ce0e093ad5,6\c\6c9c096d3210e8951eb64d2ba253fbc2f87e49f1
 \
@@ -39,9 +37,5 @@ Q.idea/sonarlint/securityhotspotstore/4/1/41eb946c7b834f6c12c58dff8713af12bfe506
 medron/mvnw.cmd,1\4\14aad43530c5ae59ad0e2a75010fcc9101f91f64
 ;
 medron/mvnw,e\c\ec69e100b08a4c0ad65355353cb499a6103ff972
->
-medron/pom.xml,f\e\fe2efa71b5ea2c93615c463ae9005ce2f0057ee8
-l
-<medron/src/main/java/com/medet/medron/MedronApplication.java,e\b\eb1d3d1274d66001a0c656126158910b8f73ebb2
-x
-Hmedron/src/main/java/com/medet/medron/repository/EmployeeRepository.java,6\c\6cd2b83ca6a0c00fb605d8af8e0d9ec84611068d
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d

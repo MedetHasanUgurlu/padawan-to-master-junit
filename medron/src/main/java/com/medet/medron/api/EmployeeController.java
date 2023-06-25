@@ -22,6 +22,7 @@ public class EmployeeController {
     }
 
     @GetMapping
+    @ResponseStatus(HttpStatus.OK)
     public List<EmployeeDto> getAll(){
        return service.getAll();
     }
