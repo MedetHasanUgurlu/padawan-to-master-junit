@@ -6,6 +6,7 @@ import com.medet.medron.repository.EmployeeRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
 @Service
 @RequiredArgsConstructor
@@ -42,6 +43,7 @@ public class EmployeeManager implements EmployeeService{
         e.setSalary(dto.salary());
         e.setDepartment(dto.department());
         return e;
+
     }
     public EmployeeDto customMapToDto(Employee e){
      EmployeeDto employeeDto = new EmployeeDto(e.getId(),e.getName(),e.getSurName(),e.getSalary(),e.getDepartment());

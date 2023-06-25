@@ -2,7 +2,10 @@ package com.medet.medron.api;
 
 import com.medet.medron.business.EmployeeService;
 import com.medet.medron.business.dto.EmployeeDto;
+import com.medet.medron.entity.Employee;
 import lombok.RequiredArgsConstructor;
+
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -13,8 +16,9 @@ import java.util.List;
 public class EmployeeController {
     private final EmployeeService service;
     @PostMapping
-    public void add(@RequestBody EmployeeDto dto){
-        service.add(dto);
+    @ResponseStatus(HttpStatus.OK)
+    public Employee add(@RequestBody EmployeeDto dto){
+        return service.add(dto);
     }
 
     @GetMapping

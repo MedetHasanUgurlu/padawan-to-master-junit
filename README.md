@@ -154,3 +154,27 @@ Does not load beans into ApplicationContext.
 ![img_21.png](img_21.png)
 
 
+@SpringBootTest: annotation for Integeration testing. This annotation creates and applicationcontext.
+
+@SpringBootTest: Integeration Test
+
+@WebMvcTest: Unit Test
+
+@WebMvcTest: based tests runs faster as wit will only the specified controller and its dependicies only without loading entire application.
+
+
+
+
+A java DSL for reading JSON documents.
+ 
+Json
+{
+"firstName": "Medet",
+"lastName": "Ugurlu"
+}
+
+JsonPath Expression
+{
+$.firstName = "Medet"
+$.lastName = "Ugurlu"
+}
