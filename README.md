@@ -19,7 +19,7 @@
          assertEquals("How are you?", systemUnderTest.talk());
       }
 <div align="center">
-<img src="img_3.png">
+<img src="images/img_3.png">
 </div>
 
 
@@ -33,19 +33,19 @@ annotated test class or test method is disabled and should not be executed.
 Using it for tight couple inner class.
 
 <div align="center">
-<img src="img_4.png">
+<img src="images/img_4.png">
 </div>
 
 ## Assertion
 <div align="center">
-<img src="img_5.png">
+<img src="images/img_5.png">
 </div>
 
 Import Assertions class and its statics methods.
    
       import static org.junit.jupiter.api.Assertions.*;
 
-![img_6.png](img_6.png)
+![img_6.png](images/img_6.png)
 
 ## Assumptions 
 Sometimes tests fail due to an external environment configuration or a date or time zone issue
@@ -53,39 +53,39 @@ that we cannot control. We can prevent our tests from being executed under inapp
 conditions. 
 
 <div align="center">
-<img src="img_7.png">
+<img src="images/img_7.png">
 </div>
 
 ## TestInfo
-![img_8.png](img_8.png)
+![img_8.png](images/img_8.png)
 
 ## @RepeatTest
 
 <div align="center">
-<img src="img_9.png">
-<img src="img_10.png">
+<img src="images/img_9.png">
+<img src="images/img_10.png">
 </div>
 
 ## @ParameterizedTest
 
 <div align="center">
-<img src="img_11.png">
-<img src="img_12.png">
+<img src="images/img_11.png">
+<img src="images/img_12.png">
 </div>
 
 Using Enum
 <div align="center">
-<img src="img_14.png">
+<img src="images/img_14.png">
 </div>
 
 ## DynamicTest
-![img_15.png](img_15.png)
+![img_15.png](images/img_15.png)
 
 
 
 ## Software Testing Principle
 <div align="center">
-<img src="img_16.png">
+<img src="images/img_16.png">
 </div>
 
 **Unit Test**:Unit testing is a software testing method in which individual units of source code.
@@ -103,14 +103,14 @@ relies solely on the external system interface to verify its correctness such as
 **White-box testing:** Understanding component implementation, we need to
 know how this testing process interacts with other components.
 <div align="center">
-<img src="img_17.png">
+<img src="images/img_17.png">
 </div>
 
 ### Reduce dependencies
 Using dependency injection reduce the fault and coupling.
 <div align="center">
-<img src="img_18.png">
-<img src="img_19.png">
+<img src="images/img_18.png">
+<img src="images/img_19.png">
 </div>
 
 
